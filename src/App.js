@@ -1,13 +1,17 @@
 import './App.css';
-
+import React, {useState} from 'react';
+import Form from './pages/Form/Form';
 function App() {
+  const [title] = useState("Demo");
   return (
     <div className="App">
       <header className="App-header">
+      <h1 qa-id="header-component">React {title}</h1><br/>
         <img src="Octocat.png" className="App-logo" alt="logo" />
         <p>
           GitHub Codespaces <span className="heart">♥️</span> React
         </p>
+        <Form/>
         <p className="small">
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -23,7 +27,9 @@ function App() {
         </p>
       </header>
     </div>
+    
   );
 }
+
 
 export default App;
