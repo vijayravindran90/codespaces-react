@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Install Playwright Component
-        run: npm init playwright@latest -- --ct
+        run: npx install playwright
       - name: Run Playwright Component tests
         run: npm run test-ct
       - uses: actions/upload-artifact@v3
