@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
 import Form from './pages/Form/Form';
+import Apps from '.';
 function App() {
   const [title] = useState("Demo");
   return (
@@ -25,6 +26,7 @@ function App() {
             Learn React
           </a>
         </p>
+        <Apps/>
       </header>
     </div>
     
