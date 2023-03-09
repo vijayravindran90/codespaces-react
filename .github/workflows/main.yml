@@ -15,6 +15,8 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: npm install
+      - name: Playwright Install
+        run: npm i -D playwright
       - name: Run Playwright Component tests
         run: npm run test-ct
       - uses: actions/upload-artifact@v3
