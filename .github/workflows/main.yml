@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Playwright Install
-        run: npm i -D playwright
+        run: sudo npx playwright install
       - name: Run Playwright Component tests
         run: npm run test-ct
       - uses: actions/upload-artifact@v3
